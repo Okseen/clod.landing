@@ -1,0 +1,27 @@
+.questions{
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+
+  h1{
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+
+  h3{
+    font-size: 18px;
+  }
+
+  a{
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    padding: 20px 45px;
+    border: 2px solid #8bc34a;
+    margin-top: 20px;
+
+    &:hover{
+      background-color: #8bc34a;
+    }
+  }
+}
