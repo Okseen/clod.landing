@@ -4,13 +4,13 @@
   }
 }
 
-@media (max-width: 998px){
+@media only screen and (max-width: 992px){
   body .container {
-    width: 772px;
+    width: 726px;
   }
 }
 
-@media (max-width: 786px){
+@media only screen and (max-width: 768px){
   body .container {
     width: 100%;
   }

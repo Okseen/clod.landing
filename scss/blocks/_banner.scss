@@ -4,6 +4,13 @@
   align-items: flex-end;
 
   &-item{
+  	width: 50%;
+  	
+  	&:first-child{
+	  margin-top: auto;
+	  margin-bottom: -16px;
+  	}
+
     &_left{
       img{
         width: 100%;
