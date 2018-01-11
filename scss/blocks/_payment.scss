@@ -1,0 +1,57 @@
+.payment{
+  &-title{
+    text-align: center;
+
+    h1{
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+
+    h3{
+      font-size: 25px;
+      margin-bottom: 70px;
+    }
+  }
+
+  &-carousel{
+    .owl-carousel{
+      width: 90%;
+
+      .owl-nav{
+        position: absolute;
+        top: 0;
+        width: 100%;
+
+        .owl-prev{
+          left: -90px;
+          top: 27px;
+          position: absolute;
+        }
+
+        .owl-next{
+          right: -90px;
+          top: 27px;
+          position: absolute;
+        }
+      }
+
+      .owl-dots{
+        margin-top: 10px;
+
+        .owl-dot{
+          span{
+            width: 20px;
+            height: 20px;
+            border: 1px solid #949494;
+          }
+
+          &.active{
+            span{
+              background-color: #408eb1;
+            }
+          }
+        }
+      }
+    }
+  }
+}

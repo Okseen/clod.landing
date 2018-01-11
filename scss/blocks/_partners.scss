@@ -1,0 +1,54 @@
+.partners{
+  //display: flex;
+  //justify-content: center;
+  //align-items: center;
+  //flex-direction: column;
+
+  &-item{
+    &__left{
+      text-align: center;
+      margin-bottom: 100px;
+      color: #fff;
+
+      h1{
+        font-size: 40px;
+        margin-bottom: 25px;
+      }
+
+      h3{
+        font-size: 26px;
+      }
+    }
+
+    &__right{
+      &-container{
+        .owl-stage{
+          display: flex !important;
+          align-items: center;
+
+          img{
+            width: auto;
+          }
+        }
+
+        .owl-dots{
+          margin-top: 30px !important;
+
+          .owl-dot{
+            span{
+              width: 20px;
+              height: 20px;
+              border: 1px solid #949494;
+            }
+
+            &.active{
+              span{
+                background-color: #e9eaee;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

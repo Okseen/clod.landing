@@ -1,0 +1,46 @@
+.slider{
+  &__item{
+    &-image{
+
+    }
+
+    &-desc{
+      background-color: #5793b2;
+      padding-left: 45px;
+      padding-right: 45px;
+      padding-top: 30px;
+      padding-bottom: 15px;
+
+      color: #fff;
+
+      h2{
+        font-size: 30px;
+        margin-bottom: 15px;
+      }
+
+      h4{
+        font-size: 18px;
+      }
+    }
+  }
+
+  .owl-carousel{
+    .owl-dots{
+      margin-top: 10px;
+
+      .owl-dot{
+        span{
+          width: 20px;
+          height: 20px;
+          border: 1px solid #949494;
+        }
+
+        &.active{
+          span{
+            background-color: #408eb1;
+          }
+        }
+      }
+    }
+  }
+}

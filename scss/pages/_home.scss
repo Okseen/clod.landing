@@ -4,7 +4,7 @@
 }
 
 #banner{
-  padding-top: 200px;
+  padding-top: 90px;
   background-size: cover;
   background-image: url(/images/bg_banner.png);
 }
@@ -12,5 +12,48 @@
 #questions{
   padding: 25px 0;
   background-size: cover;
-  background-image: url("/images/subscribe_bg.png");
+  background-image: url("/images/question_bg.png");
+}
+
+#feature{
+  padding-top: 130px;
+  background-color: #f4f5f7;
+}
+
+#slider{
+  padding-top: 60px;
+  padding-bottom: 20px;
+}
+
+#payment{
+  background-color: #e9eaee;
+  padding: 50px 0;
+}
+
+#market{
+  padding: 40px 0;
+}
+
+#subscribe{
+  background-color: #e9eaee;
+  padding: 40px 0;
+}
+
+#banner-footer{
+  padding-top: 40px;
+  background-size: cover;
+  background-image: url("/images/bg_banner_subscrible.png");
+}
+
+#partners{
+  margin-top: 50px;
+  padding-top: 80px;
+  padding-bottom: 60px;
+  background-color: #242d37;
+}
+
+#footer{
+  padding-top: 100px;
+  padding-bottom: 50px;
+  background-color: #e9eaee;
 }

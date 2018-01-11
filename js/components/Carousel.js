@@ -8,12 +8,12 @@
     }
 
     var defaultConfig = {
-        num: 3, //要显示的数量，应该是个奇数
-        maxWidth: 250, //代表中央图片的宽度
-        maxHeight: 150, //中央图片的高度
-        autoPlay: true, //是否自动滚动播放
-        showTime: 1000, //autoPlay为true时这个属性才有用
-        animationTime: 300, //
+        num: 3,
+        maxWidth: 250,
+        maxHeight: 150,
+        autoPlay: true,
+        showTime: 1000,
+        animationTime: 300,
         scale: 0.8,
         distance: 50
     };

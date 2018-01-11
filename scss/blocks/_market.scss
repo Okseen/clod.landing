@@ -1,0 +1,21 @@
+.market{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &-item{
+    &__left{
+      margin-right: 20px;
+
+      h1{
+        font-size: 40px;
+      }
+
+      p{
+        margin-top: 50px;
+        font-size: 17px;
+        line-height: 30px;
+      }
+    }
+  }
+}

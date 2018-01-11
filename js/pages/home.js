@@ -2,79 +2,65 @@ $(document).ready(function(){
 
 	var Home = {
 		setSliders: function () {
-			var owl = $('#reviews_carousel');
+			var owl = $('#payment_carousel');
 			owl.owlCarousel({
 				margin: 10,
 				nav: true,
 				dots:true,
+                dotsEach:true,
 				loop: true,
-				navText: ["<img src='images/left-arrow-white.png' />", "<img src='images/right-arrow-white.png' />"],
+				navText: ["<img src='/images/arrow_left.png' />", "<img src='/images/arrow_right.png' />"],
 				responsive: {
 					0: {
 						items: 1
 					},
 					600: {
-						items: 1
+						items: 2
 					},
 					1000: {
-						items: 1
-					}
-				}
-			});
-			owl = $('#partners_slider');
-			owl.owlCarousel({
-				margin: 10,
-				nav: true,
-				loop: true,
-				items:3,
-				navText: ["<img src='images/left-arrow.png' />", "<img src='images/right-arrow.png' />"],
-				responsive: {
-					0: {
-						items: 1
-					},
-					600: {
-						items: 1
-					},
-					1000: {
-						items: 1
+						items: 5
 					}
 				}
 			});
 
-			var sliders_sizes = {
-				maxWidth: 665,
-				maxHeight: 460
-			},distance = 100;
+            owl = $('#main_slider');
+            owl.owlCarousel({
+                margin: 10,
+                dots:true,
+                dotsEach:true,
+                loop: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 1
+                    },
+                    1000: {
+                        items: 1
+                    }
+                }
+            });
 
-			if($(window).width() <= 768){
-				sliders_sizes = {
-					maxWidth: 300,
-					maxHeight: 270
-				};
-				distance = 5;
-			}
-
-			$('#slider_1').carousel({
-				num: 3,
-				maxWidth: sliders_sizes['maxWidth'],
-				maxHeight: sliders_sizes['maxHeight'],
-				distance: distance,
-				scale: 0.6,
-				autoPlay: true,
-				animationTime: 500,
-				showTime: 4000
-			});
-
-			$('#slider_2').carousel({
-				num: 3,
-				maxWidth: sliders_sizes['maxWidth'],
-				maxHeight: sliders_sizes['maxHeight'],
-				distance: distance,
-				scale: 0.6,
-				autoPlay: true,
-				animationTime: 500,
-				showTime: 4000
-			});
+            owl = $('#partners_slider');
+            owl.owlCarousel({
+                margin: 30,
+                dots:true,
+                dotsEach:true,
+                nav: false,
+                loop: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 2
+                    },
+                    1000: {
+                        items: 3
+                    }
+                }
+            });
 		},
 		initHeaderMenu: function () {
 			//responsive
@@ -96,7 +82,7 @@ $(document).ready(function(){
 		},
 		init: function(){
 			this.setSliders();
-			this.initHeaderMenu();
+			//this.initHeaderMenu();
 		}
 	};
 	Home.init();
