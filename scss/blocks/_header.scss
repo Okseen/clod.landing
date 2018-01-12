@@ -10,7 +10,8 @@
 
   &-item{
     &_logo-link{
-      font-size: 30px;
+      display: block;
+      font-size: 25px;
       word-spacing: -5px;
 
       span{
@@ -22,10 +23,12 @@
       display: flex;
       list-style: none;
 
+      font-weight: 700;
+
       li{
         a{
-          font-size: 15px;
-          padding: 35px 15px;
+          font-size: 14px;
+          padding: 35px 10px;
           text-decoration: none;
           display: block;
           text-transform: uppercase;
@@ -42,10 +45,12 @@
       display: flex;
       list-style: none;
 
+      font-weight: 500;
+
       li{
         a{
-          font-size: 15px;
-          padding: 10px 25px;
+          font-size: 14px;
+          padding: 10px 15px;
           text-decoration: none;
           display: block;
           text-transform: uppercase;
@@ -56,6 +61,10 @@
           }
         }
       }
+    }
+
+    &_menutoggler{
+      display: none;
     }
   }
 }

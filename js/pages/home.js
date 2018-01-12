@@ -12,10 +12,10 @@ $(document).ready(function(){
 				navText: ["<img src='/images/arrow_left.png' />", "<img src='/images/arrow_right.png' />"],
 				responsive: {
 					0: {
-						items: 1
-					},
-					600: {
 						items: 2
+					},
+					768: {
+						items: 4
 					},
 					1000: {
 						items: 5
@@ -47,13 +47,14 @@ $(document).ready(function(){
                 margin: 30,
                 dots:true,
                 dotsEach:true,
-                nav: false,
+                nav: true,
                 loop: true,
+                navText: ["<img src='/images/arrow_left.png' />", "<img src='/images/arrow_right.png' />"],
                 responsive: {
                     0: {
-                        items: 1
+                        items: 2
                     },
-                    600: {
+                    768: {
                         items: 2
                     },
                     1000: {
@@ -64,25 +65,25 @@ $(document).ready(function(){
 		},
 		initHeaderMenu: function () {
 			//responsive
-			$('.headblock-item_nav-menutoggler').on('click', function(){
+			$('.header-item_menutoggler').on('click', function(){
 				$('.response_dropdown_menu').slideToggle('fast');
 			});
 
 			//fixed
-			$(window).bind('scroll', function () {
-				if ($(window).scrollTop() > 0) {
-					$('#header').addClass('fixed');
-					$('#banner').addClass('fixed');
-
-				} else {
-					$('#banner').removeClass('fixed');
-					$('#header').removeClass('fixed');
-				}
-			});
+			// $(window).bind('scroll', function () {
+			// 	if ($(window).scrollTop() > 0) {
+			// 		$('#header').addClass('fixed');
+			// 		$('#banner').addClass('fixed');
+            //
+			// 	} else {
+			// 		$('#banner').removeClass('fixed');
+			// 		$('#header').removeClass('fixed');
+			// 	}
+			// });
 		},
 		init: function(){
 			this.setSliders();
-			//this.initHeaderMenu();
+			this.initHeaderMenu();
 		}
 	};
 	Home.init();
