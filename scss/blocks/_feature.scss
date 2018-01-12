@@ -48,11 +48,15 @@
             justify-content: space-between;
             margin-bottom: 50px;
 
+            span{
+                width: 90%;
+            }
+
             &:before{
               margin-right: 25px;
               content: '';
               display: inline-block;
-              width: 100px;
+              width: 10%;
               height: 55px;
               background-repeat: no-repeat;
               background-size: contain;
