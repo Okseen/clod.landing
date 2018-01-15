@@ -52,7 +52,7 @@ $(document).ready(function(){
                 navText: ["<img src='/images/arrow_left.png' />", "<img src='/images/arrow_right.png' />"],
                 responsive: {
                     0: {
-                        items: 2
+                        items: 1
                     },
                     768: {
                         items: 2
